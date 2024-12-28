@@ -1,4 +1,4 @@
-# shopify
+# Shopify
 ### A Flutter-based eCommerce application showcasing products with dynamic content. This app allows users to browse through product lists, view product images in a PageView, and add/remove products from their cart.
 ![output](https://github.com/user-attachments/assets/67653f47-42da-4f27-8134-e1fa5fcdf89d)
 
