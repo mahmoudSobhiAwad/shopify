@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shopify/core/app_colors.dart';
 import 'package:shopify/core/constant.dart';
 import 'package:shopify/core/font_styles.dart';
-import 'package:shopify/home/data/data.dart';
+import 'package:shopify/features/home/data/data.dart';
 
 //using PreferredSizeWidget, becuase app bar in scaffold has constant size so to import it outside scaffold 
 //, we have to give fixed size

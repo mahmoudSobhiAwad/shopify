@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:shopify/core/widgets/custom_text.dart';
-import 'package:shopify/home/data/model/product_model.dart';
-import 'package:shopify/home/presentation/widgets/hot_offer_product_list.dart';
-import 'package:shopify/home/presentation/widgets/image_in_page_view.dart';
-import 'package:shopify/home/presentation/widgets/product_grid_view.dart';
+import 'package:shopify/features/home/data/model/product_model.dart';
+import 'package:shopify/features/home/presentation/widgets/hot_offer_product_list.dart';
+import 'package:shopify/features/home/presentation/widgets/image_in_page_view.dart';
+import 'package:shopify/features/home/presentation/widgets/product_grid_view.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({

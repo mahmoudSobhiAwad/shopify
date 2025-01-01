@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shopify/core/extentions.dart';
 import 'package:shopify/core/font_styles.dart';
 import 'package:shopify/core/widgets/custom_snack_bar.dart';
-import 'package:shopify/home/data/model/product_model.dart';
+import 'package:shopify/features/home/data/model/product_model.dart';
 
 class ProductDetailsItem extends StatelessWidget {
   const ProductDetailsItem({

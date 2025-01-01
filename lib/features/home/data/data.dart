@@ -1,4 +1,4 @@
-import 'package:shopify/home/data/model/product_model.dart';
+import 'package:shopify/features/home/data/model/product_model.dart';
 
 List<ProductModel> mainProudcts = [
   ProductModel(

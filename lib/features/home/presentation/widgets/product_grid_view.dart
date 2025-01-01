@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopify/core/extentions.dart';
-import 'package:shopify/home/data/data.dart';
-import 'package:shopify/home/presentation/widgets/product_item_in_grid.dart';
+import 'package:shopify/features/home/data/data.dart';
+import 'package:shopify/features/home/presentation/widgets/product_item_in_grid.dart';
 
 class GridViewOfProducts extends StatelessWidget {
   const GridViewOfProducts({

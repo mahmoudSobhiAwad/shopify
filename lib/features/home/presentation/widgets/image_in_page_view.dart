@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopify/core/extentions.dart';
-import 'package:shopify/home/data/model/product_model.dart';
-import 'package:shopify/home/presentation/widgets/custom_network_image.dart';
+import 'package:shopify/features/home/data/model/product_model.dart';
+import 'package:shopify/features/home/presentation/widgets/custom_network_image.dart';
 
 class ProductImagesInPageView extends StatelessWidget {
   const ProductImagesInPageView({

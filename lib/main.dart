@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopify/home/presentation/home_view.dart';
+import 'package:shopify/features/home/presentation/home_view.dart';
 
 //enrty point of app
 void main() {

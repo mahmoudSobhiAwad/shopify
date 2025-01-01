@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopify/core/extentions.dart';
-import 'package:shopify/home/data/data.dart';
-import 'package:shopify/home/presentation/widgets/product_item_in_hot_offer_list.dart';
+import 'package:shopify/features/home/data/data.dart';
+import 'package:shopify/features/home/presentation/widgets/product_item_in_hot_offer_list.dart';
 
 class HotOfferProductList extends StatelessWidget {
   const HotOfferProductList({

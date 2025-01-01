@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:shopify/core/app_colors.dart';
 import 'package:shopify/core/font_styles.dart';
 import 'package:shopify/core/widgets/custom_decoration.dart';
-import 'package:shopify/home/data/model/product_model.dart';
-import 'package:shopify/home/presentation/widgets/custom_network_image.dart';
-import 'package:shopify/home/presentation/widgets/product_details_item.dart';
+import 'package:shopify/features/home/data/model/product_model.dart';
+import 'package:shopify/features/home/presentation/widgets/custom_network_image.dart';
+import 'package:shopify/features/home/presentation/widgets/product_details_item.dart';
 
 class ProductItemInHorizontalList extends StatelessWidget {
   const ProductItemInHorizontalList(
