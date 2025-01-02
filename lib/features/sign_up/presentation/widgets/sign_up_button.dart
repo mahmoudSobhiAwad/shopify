@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shopify/core/app_colors.dart';
-import 'package:shopify/core/extentions.dart';
 import 'package:shopify/core/font_styles.dart';
 import 'package:shopify/core/widgets/custom_push_button.dart';
-import 'package:shopify/features/home/presentation/home_view.dart';
+import 'package:shopify/features/sign_up/presentation/widgets/success_dialog.dart';
 
 class SignUpButton extends StatelessWidget {
   const SignUpButton({
@@ -20,13 +19,14 @@ class SignUpButton extends StatelessWidget {
       pushButtomText: "تسجيل",
       onTap: () {
         if (formKey.currentState!.validate()) {
-          context.push(const HomeView());
+          showSuccessDialog(context);
         }
       },
-      color: const Color(0xffC3BFAA),
+      color: AppColors.peige,
       borderRadius: 10,
       pushButtomTextStyle:
           AppFontStyles.bold18(context).copyWith(color: AppColors.white),
     );
   }
 }
+

@@ -6,5 +6,6 @@ class AppColors {
   static const Color veryLightGray = Color(0xFFEEEEEE);
   static const Color green = Color(0xFF88C273);
   static const Color red = Color(0xFFC93814);
+  static const Color peige = Color(0xffC3BFAA);
   
 }

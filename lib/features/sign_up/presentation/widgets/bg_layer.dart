@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopify/core/app_colors.dart';
 
 class BackGroundBlurLayer extends StatelessWidget {
   const BackGroundBlurLayer({
@@ -17,7 +18,7 @@ class BackGroundBlurLayer extends StatelessWidget {
           shape: BoxShape.circle,
           boxShadow: [
             BoxShadow(
-                color: Color(0xffC3BFAA),
+                color: AppColors.peige,
                 blurRadius: 270,
                 blurStyle: BlurStyle.normal),
           ],
