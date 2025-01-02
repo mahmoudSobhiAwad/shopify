@@ -7,15 +7,9 @@
 
 ## Getting Started
 ### Features
-### Sign Up
-#### enable User to enter name ,email ,password and confiramtion for this password 
-#### Add Validation to ensure all input meet the requirement
-###  which are
-#### Capital first character in name,
-#### email containe @,
-#### password musn't be less than 6
-#### confirm  must equal password
-### show Alert Dialog to show success login
+### Add animation while transation from sign up to home
+#### using PageRoute the prepare the pages (the navigated to and the current) to add animation before reach the desired
+#### make custom function that take custom curve and custom duration in case usage in other place
 
 ## Customization
 ### Colors

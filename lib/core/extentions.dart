@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 extension MediaQueryValues on BuildContext {
-
   double get screenHeight => MediaQuery.sizeOf(this).height;
   double get screenWidth => MediaQuery.sizeOf(this).width;
 
@@ -16,44 +15,83 @@ extension MediaQueryValues on BuildContext {
 }
 
 extension NavigationExtensions on BuildContext {
-  // Navigate using route name
-  void pushNamed(String routeName, {Object? arguments}) {
-    Navigator.pushNamed(this, routeName, arguments: arguments);
+  // follow the instruction of flutter doc
+  //1- first make animate route that take tha page we nave to also optional curve and duration between
+  PageRouteBuilder<T> _animatedRoute<T>(Widget page,
+      {Curve curve = Curves.easeInOut,
+      Duration transationDuration = const Duration(milliseconds: 300),
+      Duration reverseTransationDuration = const Duration(milliseconds: 300)}) {
+    return PageRouteBuilder(
+      transitionDuration: transationDuration,
+      reverseTransitionDuration: reverseTransationDuration,
+      // add the page where we navigate
+      pageBuilder: (context, animation, secondaryAnimation) => page,
+      // add transation for the page we set here fade transation accoring to requirement
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        // while navigate to we set navigated to page with fade in the take the first animation.
+        var fadeIn = Tween(begin: 0.0, end: 1.0).animate(
+          CurvedAnimation(parent: animation, curve: curve),
+        );
+        // while navigate to we set currento page with fade out the take the second animation.
+
+        var fadeOut = Tween(begin: 1.0, end: 0.0).animate(
+          CurvedAnimation(parent: secondaryAnimation, curve: curve),
+        );
+        //return the fade transation
+
+        return FadeTransition(
+          // the navigated to opacity
+          opacity: fadeIn,
+          // the current page
+          child: FadeTransition(
+            opacity: fadeOut,
+            child: child,
+          ),
+        );
+      },
+    );
   }
 
-  void pushReplacementNamed(String routeName, {Object? arguments}) {
-    Navigator.pushReplacementNamed(this, routeName, arguments: arguments);
-  }
-
-  void pushAndRemoveUntilNamed(String routeName, {Object? arguments}) {
-    Navigator.pushNamedAndRemoveUntil(this, routeName, (route) => false,
-        arguments: arguments);
-  }
-
-  // Pop the current screen
   void pop<T extends Object?>([T? result]) {
     Navigator.pop(this, result);
   }
 
-  // Navigate directly using a Widget (unnamed route)
-  void push(Widget page) {
+  void push(Widget page,
+      {Curve curve = Curves.easeInOut,
+      Duration transationDuration = const Duration(milliseconds: 300),
+      Duration reverseTransationDuration = const Duration(milliseconds: 300)}) {
     Navigator.push(
       this,
-      MaterialPageRoute(builder: (context) => page),
+      _animatedRoute(page,
+          curve: curve,
+          transationDuration: transationDuration,
+          reverseTransationDuration: reverseTransationDuration),
     );
   }
 
-  void pushReplacement(Widget page) {
+  void pushReplacement(Widget page,
+      {Curve curve = Curves.easeInOut,
+      Duration transationDuration = const Duration(milliseconds: 300),
+      Duration reverseTransationDuration = const Duration(milliseconds: 300)}) {
     Navigator.pushReplacement(
       this,
-      MaterialPageRoute(builder: (context) => page),
+      _animatedRoute(page,
+          curve: curve,
+          transationDuration: transationDuration,
+          reverseTransationDuration: reverseTransationDuration),
     );
   }
 
-  void pushAndRemoveUntil(Widget page) {
+  void pushAndRemoveUntil(Widget page,
+      {Curve curve = Curves.easeInOut,
+      Duration transationDuration = const Duration(milliseconds: 300),
+      Duration reverseTransationDuration = const Duration(milliseconds: 300)}) {
     Navigator.pushAndRemoveUntil(
       this,
-      MaterialPageRoute(builder: (context) => page),
+      _animatedRoute(page,
+          curve: curve,
+          transationDuration: transationDuration,
+          reverseTransationDuration: reverseTransationDuration),
       (route) => false,
     );
   }
