@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopify/features/home/presentation/home_view.dart';
+import 'package:shopify/features/sign_up/presentation/sign_up_view.dart';
 
 //enrty point of app
 void main() {
@@ -18,7 +18,7 @@ class Shopify extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeView(),
+      home: const SignUpView(),
     );
   }
 }

@@ -18,6 +18,13 @@ class AppFontStyles {
       fontSize: 18,
     );
   }
+  static TextStyle bold26(BuildContext context) {
+    return const TextStyle(
+      
+      fontWeight: FontWeight.w700, // bold
+      fontSize: 26,
+    );
+  }
   static TextStyle bold16(BuildContext context) {
     return const TextStyle(
       fontWeight: FontWeight.w700, // bold
@@ -28,6 +35,12 @@ class AppFontStyles {
     return const TextStyle(
       fontWeight: FontWeight.w400, // bold
       fontSize: 12,
+    );
+  }
+  static TextStyle regular16(BuildContext context) {
+    return const TextStyle(
+      fontWeight: FontWeight.w400, // bold
+      fontSize: 16,
     );
   }
   static TextStyle regular12Light(BuildContext context) {
