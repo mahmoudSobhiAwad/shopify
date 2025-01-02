@@ -1,8 +1,8 @@
 # Shopify
 ### A Flutter-based eCommerce application Sign up page for shopping app.
 
+![output](https://github.com/user-attachments/assets/91302b4e-9fc4-4976-a522-5989dcd36785)
 
-https://github.com/user-attachments/assets/cd3a6d90-ff77-46a4-a0c2-6b283188f334
 
 
 ## Getting Started
@@ -15,6 +15,7 @@ https://github.com/user-attachments/assets/cd3a6d90-ff77-46a4-a0c2-6b283188f334
 #### email containe @,
 #### password musn't be less than 6
 #### confirm  must equal password
+### show Alert Dialog to show success login
 
 ## Customization
 ### Colors
