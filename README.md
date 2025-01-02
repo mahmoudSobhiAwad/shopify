@@ -1,7 +1,10 @@
 # Shopify
 ### A Flutter-based eCommerce application Sign up page for shopping app.
 
-![output](https://github.com/user-attachments/assets/91302b4e-9fc4-4976-a522-5989dcd36785)
+
+
+https://github.com/user-attachments/assets/876b5b0c-6bb1-4197-a536-283cb3a50fc1
+
 
 
 
