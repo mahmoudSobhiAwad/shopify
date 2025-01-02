@@ -4,6 +4,15 @@
 
 ## Getting Started
 ### Features
+### Sign Up
+#### enable User to enter name ,email ,password and confiramtion for this password 
+#### Add Validation to ensure all input meet the requirement
+###  which are
+#### Capital first character in name,
+#### email containe @,
+#### password musn't be less than 6
+#### confirm  must equal password
+### product page
 #### Product scroll with page view:horizontal scroll of product images that changes every 5 seconds.
 #### Product Grid: A grid of product items with images and details like name and price and button to change is item in card or not.
 #### Horizontal Hot Offers: A horizontal list of hot offers with Banner that show discount text on it.
