@@ -24,6 +24,7 @@ class ConfirmPasswordField extends StatelessWidget {
       isObeseureText: enableConfirmPassword,
       label: "Confirm Password",
       maxLine: 1,
+      // using obesucre changing visibilty to show or hide  confirm password
       suffixWidget: IconButton(
           onPressed: changeObsecure,
           icon: Icon(

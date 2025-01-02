@@ -7,6 +7,7 @@ import 'package:shopify/features/sign_up/presentation/widgets/name_field.dart';
 import 'package:shopify/features/sign_up/presentation/widgets/password_field.dart';
 import 'package:shopify/features/sign_up/presentation/widgets/sign_up_button.dart';
 
+//make statefule widget to hadle changing in state
 class FormSignUp extends StatefulWidget {
   const FormSignUp({super.key});
 
@@ -15,24 +16,32 @@ class FormSignUp extends StatefulWidget {
 }
 
 class _FormSignUpState extends State<FormSignUp> {
+  //define global key to check validation in fields
   final formKey = GlobalKey<FormState>();
+
   final TextEditingController passwordController = TextEditingController();
+  //to handle changes in obsecure text visibilty
   bool enablePassword = false;
   bool enableConfirmPassword = false;
   @override
   Widget build(BuildContext context) {
+    // use single child scroll view to handle keyboard overflow
     return SingleChildScrollView(
+      // add some padding around form
       padding: EdgeInsets.only(
           top: context.screenHeight * 0.1, left: 10, right: 10, bottom: 20),
       child: Form(
         key: formKey,
         child: Column(
+          // new in flutter to add spacing between each widget instead of boring sized box between each
           spacing: 16,
           children: [
+            // header text
             Text(
               "Create Account",
               style: AppFontStyles.bold26(context),
             ),
+            //secondary text
             Text(
               "Sign With Us, and get full features",
               style: AppFontStyles.regular16(context),
@@ -40,8 +49,11 @@ class _FormSignUpState extends State<FormSignUp> {
             const SizedBox(
               height: 20,
             ),
+            // name field
             const NameTextFormField(),
+            // email field
             const EmailTextFormField(),
+            // password field
             PassworkFromField(
               enablePassword: enablePassword,
               passwordController: passwordController,
@@ -50,6 +62,7 @@ class _FormSignUpState extends State<FormSignUp> {
                 setState(() {});
               },
             ),
+            //confirm password field
             ConfirmPasswordField(
                 changeObsecure: () {
                   enableConfirmPassword = !enableConfirmPassword;
@@ -60,6 +73,7 @@ class _FormSignUpState extends State<FormSignUp> {
             const SizedBox(
               height: 20,
             ),
+            // sign up button
             SignUpButton(formKey: formKey),
           ],
         ),

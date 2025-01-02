@@ -10,6 +10,7 @@ class EmailTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTextFormField(
+      //vaidator to check if email contain @
       validator: (value) {
         if (value != null && value.trim().isNotEmpty && value.contains('@')) {
           return null;

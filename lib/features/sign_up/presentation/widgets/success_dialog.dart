@@ -5,7 +5,9 @@ import 'package:shopify/core/font_styles.dart';
 import 'package:shopify/features/home/presentation/home_view.dart';
 
 Future<dynamic> showSuccessDialog(BuildContext context) {
+  //usign show dialog method to show success sign up
   return showDialog(
+    // to deny dissmiss dialog , and allow only from button 
     barrierDismissible: false,
     builder: (context) {
       return AlertDialog(
@@ -14,7 +16,9 @@ Future<dynamic> showSuccessDialog(BuildContext context) {
           alignment: Alignment.topLeft,
           child: IconButton(
             onPressed: () {
+              // first remove dialog
               context.pop();
+              //second navigate to home
               context.push(const HomeView());
             },
             icon: const Icon(

@@ -9,6 +9,7 @@ class NameTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTextFormField(
+      // validator function to check if name contain in first letter is capital
       validator: (value) {
         if (value != null &&
             value.trim().isNotEmpty &&

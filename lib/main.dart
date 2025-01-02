@@ -18,6 +18,7 @@ class Shopify extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      // make the home be sign up
       home: const SignUpView(),
     );
   }

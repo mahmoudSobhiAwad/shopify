@@ -15,6 +15,7 @@ class PassworkFromField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTextFormField(
+      // validator to check if password is at least 6 chars
       validator: (value) {
         if (value != null && value.trim().isNotEmpty && value.length >= 6) {
           return null;
@@ -26,6 +27,7 @@ class PassworkFromField extends StatelessWidget {
       isObeseureText: enablePassword,
       label: "Passowrd",
       maxLine: 1,
+      // using obesucre changing visibilty to show or hide password
       suffixWidget: IconButton(
           onPressed: changeObsecure,
           icon: Icon(
