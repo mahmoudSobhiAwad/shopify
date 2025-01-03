@@ -16,7 +16,7 @@ class SignUpButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomPushContainerButton(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-      pushButtomText: "تسجيل",
+      pushButtomText: "Sign Up",
       onTap: () {
         // using at end the validation of all validation method in form widget
         if (formKey.currentState!.validate()) {
