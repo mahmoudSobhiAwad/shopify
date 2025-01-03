@@ -17,7 +17,7 @@ class NameTextFormField extends StatelessWidget {
             value[0] == value[0].toUpperCase()) {
           return null;
         } else {
-          return " the first in character name must be capital !";
+          return context.tr("nameValidation");
         }
       },
       label:  context.tr('name'),

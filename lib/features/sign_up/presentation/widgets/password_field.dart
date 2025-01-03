@@ -21,12 +21,12 @@ class PassworkFromField extends StatelessWidget {
         if (value != null && value.trim().isNotEmpty && value.length >= 6) {
           return null;
         } else {
-          return "your password is too short !";
+          return context.tr("passValidation");
         }
       },
       controller: passwordController,
       isObeseureText: enablePassword,
-      label:context.tr('password'),
+      label: context.tr('password'),
       maxLine: 1,
       // using obesucre changing visibilty to show or hide password
       suffixWidget: IconButton(

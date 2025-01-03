@@ -11,5 +11,9 @@
     "hotOfferTitle":"عروض مميزة",
     "lang":"EN",
     "snackBarAdd":"تم إضافة منتج للسلة",
-    "snackBarRemove":"تم حذف منتج من السلة"
+    "snackBarRemove":"تم حذف منتج من السلة",
+    "nameValidation":"اول حرف يجب ان يكون cpital",
+    "emailValidation":"البريد الالكتروني يجب ان يحتوي علي @",
+    "passValidation":"كلمة السر اقل من 6 حروف",
+    "passConfirmValidation":"كلمة المرور غير مطابقة"
 }

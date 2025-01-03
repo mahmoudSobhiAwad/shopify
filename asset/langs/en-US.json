@@ -11,5 +11,9 @@
     "hotOfferTitle":"hot offers",
     "lang":"ع",
     "snackBarAdd":"New Item Added To Cart ",
-    "snackBarRemove":"Item Reomved From Cart"
+    "snackBarRemove":"Item Reomved From Cart",
+    "nameValidation":"First Character must be capital !",
+    "emailValidation":"Email must contain @ !",
+    "passValidation":"Password is less than 6 !",
+    "passConfirmValidation":"Passwords are not identical !"
 }

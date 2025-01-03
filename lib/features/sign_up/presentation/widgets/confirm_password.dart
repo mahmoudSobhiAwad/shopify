@@ -19,7 +19,7 @@ class ConfirmPasswordField extends StatelessWidget {
         if (value != null && value == passwordController.text) {
           return null;
         } else {
-          return "your passwords are not matched  !";
+         return context.tr("passConfirmValidation");
         }
       },
       isObeseureText: enableConfirmPassword,

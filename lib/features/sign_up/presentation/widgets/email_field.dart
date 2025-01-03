@@ -16,7 +16,7 @@ class EmailTextFormField extends StatelessWidget {
         if (value != null && value.trim().isNotEmpty && value.contains('@')) {
           return null;
         } else {
-          return "email  must contain @ !";
+          return context.tr("emailValidation");
         }
       },
       label: context.tr('email'),
