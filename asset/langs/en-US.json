@@ -1,0 +1,15 @@
+{
+    "createAccTitle": "Create Account",
+    "createAccSubTitle": "Sign With Us, and get full features",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPass": "ConfirmPassword",
+    "signUp": "Sign Up",
+    "welcomMessage": "Welcom To Shopify",
+    "mainProductTitle":"Our Proudcts",
+    "hotOfferTitle":"hot offers",
+    "lang":"ع",
+    "snackBarAdd":"New Item Added To Cart ",
+    "snackBarRemove":"Item Reomved From Cart"
+}

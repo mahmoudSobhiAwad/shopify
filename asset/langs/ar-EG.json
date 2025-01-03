@@ -1,0 +1,15 @@
+{
+    "createAccTitle": "إنشاء حساب",
+    "createAccSubTitle": "سجل معنا واحصل على جميع الميزات",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPass": "تأكيد كلمة المرور",
+    "signUp": "تسجيل",
+    "welcomMessage": "مرحباً بك في Shopify",
+    "mainProductTitle":"منتجاتنا",
+    "hotOfferTitle":"عروض مميزة",
+    "lang":"EN",
+    "snackBarAdd":"تم إضافة منتج للسلة",
+    "snackBarRemove":"تم حذف منتج من السلة"
+}

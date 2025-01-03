@@ -17,7 +17,7 @@ class SignUpView extends StatelessWidget {
           children: [
             // the background layer
             BackGroundBlurLayer(),
-            // form sign up 
+            // form sign up
             FormSignUp(),
           ],
         ),
@@ -25,4 +25,3 @@ class SignUpView extends StatelessWidget {
     );
   }
 }
-

@@ -11,7 +11,6 @@ class BackGroundBlurLayer extends StatelessWidget {
     // according to ui on figma i adjust that positioned
     return Positioned(
       top: -99,
-      left: -33,
       child: Container(
         //aslo set diemnssion according to design
         height: 216,
@@ -31,3 +30,4 @@ class BackGroundBlurLayer extends StatelessWidget {
     );
   }
 }
+

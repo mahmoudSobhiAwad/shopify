@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:shopify/core/app_colors.dart';
 import 'package:shopify/core/font_styles.dart';
@@ -16,7 +17,7 @@ class SignUpButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomPushContainerButton(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-      pushButtomText: "تسجيل",
+      pushButtomText: context.tr('signUp'),
       onTap: () {
         // using at end the validation of all validation method in form widget
         if (formKey.currentState!.validate()) {

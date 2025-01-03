@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:shopify/core/app_colors.dart';
 import 'package:shopify/core/extentions.dart';
@@ -42,7 +43,7 @@ Future<dynamic> showSuccessDialog(BuildContext context) {
               size: 50,
             ),
             Text(
-              "Welcom To Shopify",
+              context.tr('welcomMessage'),
               style: AppFontStyles.logoBold24(context),
             ),
           ],

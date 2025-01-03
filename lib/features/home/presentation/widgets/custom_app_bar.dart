@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:shopify/core/app_colors.dart';
 import 'package:shopify/core/constant.dart';
 import 'package:shopify/core/font_styles.dart';
+import 'package:shopify/core/widgets/chang_lang_button.dart';
 import 'package:shopify/features/home/data/data.dart';
 
-//using PreferredSizeWidget, becuase app bar in scaffold has constant size so to import it outside scaffold 
+//using PreferredSizeWidget, becuase app bar in scaffold has constant size so to import it outside scaffold
 //, we have to give fixed size
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({
@@ -23,34 +24,33 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       leading: Image.asset(
         logo,
       ),
+
       //action contain the most button in app bar
       actions: [
-        Stack(
-          alignment: Alignment.topRight,
-          children: [
-            const IconButton(
-              onPressed: null,
-              icon: Icon(
-                Icons.shopping_cart_rounded,
-                color: AppColors.black,
-              ),
-            ),
-            //stacked above item to show counter of all cart products
-            CircleAvatar(
-              radius: 9,
-              backgroundColor: AppColors.green,
-              child: Text(
-                "${mainProudcts.where((item) => item.proudctStatus).length}",
-                style: AppFontStyles.regular12(context)
-                    .copyWith(color: AppColors.white),
-              ),
-            ),
-          ],
-        )
+        // use badge widget instead of stack widget to make code less
+        Badge.count(
+          backgroundColor: AppColors.green,
+          count: mainProudcts.where((item) => item.proudctStatus).length,
+          alignment: AlignmentDirectional.topEnd,
+          child: const Icon(
+            Icons.shopping_cart_rounded,
+            color: AppColors.black,
+            size: 30,
+          ),
+        ),
+        const SizedBox(
+          width: 10,
+        ),
+        // insert change lang button
+        const ChangeLangButton(),
+        const SizedBox(
+          width: 10,
+        ),
       ],
     );
   }
-  //return size 
+
+  //return size
   @override
   Size get preferredSize => const Size(double.infinity, 50);
 }

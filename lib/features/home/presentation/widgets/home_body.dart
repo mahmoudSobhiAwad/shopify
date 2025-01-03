@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:shopify/core/widgets/custom_text.dart';
 import 'package:shopify/features/home/data/model/product_model.dart';
@@ -25,8 +26,9 @@ class HomeBody extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const CustomTextWithTitle(
-            title: "Our Proudcts",
+          // title with multi lang
+          CustomTextWithTitle(
+            title: context.tr("mainProductTitle"),
           ),
           const SizedBox(
             height: 10,
@@ -46,8 +48,9 @@ class HomeBody extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          const CustomTextWithTitle(
-            title: "hot offers",
+          // title with multi lang
+          CustomTextWithTitle(
+            title: context.tr("hotOfferTitle"),
           ),
           const SizedBox(
             height: 10,

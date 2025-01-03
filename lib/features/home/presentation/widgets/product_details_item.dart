@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:shopify/core/extentions.dart';
 import 'package:shopify/core/font_styles.dart';
@@ -33,8 +34,8 @@ class ProductDetailsItem extends StatelessWidget {
               showCustomSnackBar(
                   context,
                   productModel.proudctStatus
-                      ? "new item added to cart"
-                      : "item removed from cart");
+                      ? context.tr("snackBarAdd")
+                      : context.tr("snackBarRemove"));
             },
             icon: Icon(
               productModel.proudctStatus

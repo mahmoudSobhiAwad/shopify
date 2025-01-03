@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:shopify/core/widgets/custom_text_form_field.dart';
 
@@ -25,7 +26,7 @@ class PassworkFromField extends StatelessWidget {
       },
       controller: passwordController,
       isObeseureText: enablePassword,
-      label: "Passowrd",
+      label:context.tr('password'),
       maxLine: 1,
       // using obesucre changing visibilty to show or hide password
       suffixWidget: IconButton(

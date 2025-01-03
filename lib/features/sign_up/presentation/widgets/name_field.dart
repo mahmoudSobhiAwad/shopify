@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:shopify/core/widgets/custom_text_form_field.dart';
 
@@ -19,7 +20,7 @@ class NameTextFormField extends StatelessWidget {
           return " the first in character name must be capital !";
         }
       },
-      labelWidget: const Text("Name"),
+      label:  context.tr('name'),
       maxLine: 1,
     );
   }

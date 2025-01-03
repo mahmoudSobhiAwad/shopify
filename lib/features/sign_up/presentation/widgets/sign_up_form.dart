@@ -1,6 +1,8 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:shopify/core/extentions.dart';
 import 'package:shopify/core/font_styles.dart';
+import 'package:shopify/core/widgets/chang_lang_button.dart';
 import 'package:shopify/features/sign_up/presentation/widgets/confirm_password.dart';
 import 'package:shopify/features/sign_up/presentation/widgets/email_field.dart';
 import 'package:shopify/features/sign_up/presentation/widgets/name_field.dart';
@@ -29,21 +31,26 @@ class _FormSignUpState extends State<FormSignUp> {
     return SingleChildScrollView(
       // add some padding around form
       padding: EdgeInsets.only(
-          top: context.screenHeight * 0.1, left: 10, right: 10, bottom: 20),
+          top: context.screenHeight * 0.025, left: 10, right: 10, bottom: 20),
       child: Form(
         key: formKey,
         child: Column(
           // new in flutter to add spacing between each widget instead of boring sized box between each
           spacing: 16,
           children: [
+            // add lang button to toggle between langs
+            const Align(
+              alignment: AlignmentDirectional.topEnd,
+              child: ChangeLangButton(),
+            ),
             // header text
             Text(
-              "Create Account",
+              context.tr('createAccTitle'),
               style: AppFontStyles.bold26(context),
             ),
             //secondary text
             Text(
-              "Sign With Us, and get full features",
+              context.tr('createAccSubTitle'),
               style: AppFontStyles.regular16(context),
             ),
             const SizedBox(

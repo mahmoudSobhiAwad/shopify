@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:shopify/core/widgets/custom_text_form_field.dart';
 
@@ -22,7 +23,7 @@ class ConfirmPasswordField extends StatelessWidget {
         }
       },
       isObeseureText: enableConfirmPassword,
-      label: "Confirm Password",
+      label: context.tr('confirmPass'),
       maxLine: 1,
       // using obesucre changing visibilty to show or hide  confirm password
       suffixWidget: IconButton(
