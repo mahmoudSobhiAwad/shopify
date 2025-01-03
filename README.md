@@ -1,7 +1,6 @@
 # Shopify
 ### A Flutter-based eCommerce multi language application shopping app.
-
-![output](https://github.com/user-attachments/assets/b87d5910-9a6c-494b-bd84-1e6d8220313d)
+![output](https://github.com/user-attachments/assets/ddf37a61-3285-4af8-b1ea-b7ee80dbd359)
 
 
 ## Getting Started
